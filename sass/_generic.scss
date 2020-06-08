@@ -7,6 +7,10 @@ $color-typography-primary: #212121;
 $color-typography-secondary: #666666;
 $color-typography-disabled: #9e9e9e;
 
+// Utils
+$header-height: 80px;
+$footer-height: 60px;
+
 // Mixins
 @mixin container {
 	width: calc(100vw - 40px);
