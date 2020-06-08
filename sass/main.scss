@@ -10,7 +10,7 @@
 	.container {
 		align-items: center;
 		@include display-grid();
-		@include grid-template-columns(1fr 1fr)
+		@include grid-template-columns(1fr 1fr);
 	}
 	&__nav {
 		border-bottom: 1px solid rgba($color-brand-primary, .3);
@@ -36,8 +36,35 @@
 }
 
 .hero {
-	height: calc(100vh - 80px);
+	height: calc(100vh - 80px - 60px);
 	min-height: 500px;
+	.container {
+		height: 100%;
+		@include display-grid();
+		@include grid-template-columns(1fr);
+	}
+	&__text {
+		margin-top: 70px;
+		h1 {
+			font-weight: normal;
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			color: $color-typography-secondary;
+			span {
+				font-weight: bold;
+				color: $color-typography-primary;
+			}
+		}
+	}
+	&__img {
+		display: none;
+	}
 }
 
 .footer {

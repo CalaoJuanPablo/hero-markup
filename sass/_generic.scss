@@ -38,3 +38,8 @@ a {
 .container {
 	@include container();
 }
+
+.text--highlight {
+	color: $color-brand-primary;
+	font-weight: bold;
+}
