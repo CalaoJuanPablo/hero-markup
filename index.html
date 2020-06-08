@@ -9,29 +9,30 @@
 </head>
 
 <body>
-	<header>
-		<nav>
+	<header class="header">
+		<nav class="header__nav">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Shots</a></li>
-				<li><a href="#">Profile</a></li>
+				<li class="header__nav-link--active"><a href="#">Home</a></li>
+				<li class="header__nav-link"><a href="#">Shots</a></li>
+				<li class="header__nav-link"><a href="#">Profile</a></li>
 			</ul>
 		</nav>
-		<a href="#">Username</a>
+		<a class="header__username-link" href="#">Username</a>
 	</header>
 	<main>
-		<section>
+		<section class="hero">
 			<div class="hero__text">
 				<h1>Hello <span>World</span></h1>
-				<p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Aenean <span class="">dolor</span> nisi.</p>
+				<p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Aenean <span
+						class="text--highlight">dolor</span> nisi.</p>
 				<a href="#" class="button button--primary">Button</a>
 			</div>
 			<figure class="hero__img">
 				<img src="./images/image.png" alt="Main paint">
 			</figure>
 		</section>
-		<footer>
-			<p>Made for xxxx 2020</p>
+		<footer class="footer">
+			<p class="footer__copyright">Made for xxxx 2020</p>
 		</footer>
 	</main>
 </body>
