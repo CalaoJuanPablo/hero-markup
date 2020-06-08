@@ -39,3 +39,16 @@
 	height: calc(100vh - 80px);
 	min-height: 500px;
 }
+
+.footer {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__copyright {
+		text-align: center;
+		color: $color-typography-secondary;
+		font-size: 14px;
+	}
+}
