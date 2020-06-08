@@ -1,0 +1,15 @@
+{
+  "name": "hero-markup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch --style compressed sass/main.scss css/main.css",
+    "sass:prod": "sass sass/main.scss css/main.css"
+  },
+  "author": "CalaoJuanPablo",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.26.8"
+  }
+}
