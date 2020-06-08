@@ -27,6 +27,7 @@ $color-typography-disabled: #9e9e9e;
 body {
 	font-family: $primary-font;
 	color: $color-typography-primary;
+	overflow-x: hidden;
 }
 
 a {
