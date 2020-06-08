@@ -1,3 +1,23 @@
+// Typography
+$primary-font: Helvetica, Arial, sans-serif;
+
+// Color
+$color-brand-primary: #d80073;
+$color-typography-primary: #212121;
+$color-typography-secondary: #666666;
+$color-typography-disabled: #9e9e9e;
+
+// Mixins
+@mixin container {
+	width: calc(100vw - 40px);
+	margin: 0 auto;
+	max-width: 1200px;
+
+	@include media(tablet) {
+		width: calc(100vw - 80px);
+	}
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,4 +26,14 @@
 
 body {
 	font-family: $primary-font;
+	color: $color-typography-primary;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	@include container();
 }

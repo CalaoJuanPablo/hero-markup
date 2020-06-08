@@ -1,4 +1,36 @@
 @import './breakpoints';
-@import './variables';
 @import './grids';
 @import './generic';
+
+.header {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	.container {
+		align-items: center;
+		@include display-grid();
+		@include grid-template-columns(1fr 1fr)
+	}
+	&__nav {
+		border-bottom: 1px solid rgba($color-brand-primary, .3);
+		ul {
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+		&-link {
+			padding: 8px;
+			&:active,
+			&:focus,
+			&--active {
+				padding: 8px;
+				color: $color-brand-primary;
+				border-bottom: 2px solid $color-brand-primary;
+			}
+		}
+	}
+	&__username-link {
+		margin-left: auto;
+	}
+}

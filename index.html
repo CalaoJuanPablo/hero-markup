@@ -10,29 +10,35 @@
 
 <body>
 	<header class="header">
-		<nav class="header__nav">
-			<ul>
-				<li class="header__nav-link--active"><a href="#">Home</a></li>
-				<li class="header__nav-link"><a href="#">Shots</a></li>
-				<li class="header__nav-link"><a href="#">Profile</a></li>
-			</ul>
-		</nav>
-		<a class="header__username-link" href="#">Username</a>
+		<div class="container">
+			<nav class="header__nav">
+				<ul>
+					<li class="header__nav-link--active"><a href="#">Home</a></li>
+					<li class="header__nav-link"><a href="#">Shots</a></li>
+					<li class="header__nav-link"><a href="#">Profile</a></li>
+				</ul>
+			</nav>
+			<a class="header__username-link" href="#">Username</a>
+		</div>
 	</header>
 	<main>
 		<section class="hero">
-			<div class="hero__text">
-				<h1>Hello <span>World</span></h1>
-				<p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Aenean <span
-						class="text--highlight">dolor</span> nisi.</p>
-				<a href="#" class="button button--primary">Button</a>
+			<div class="container">
+				<div class="hero__text">
+					<h1>Hello <span>World</span></h1>
+					<p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Aenean <span
+							class="text--highlight">dolor</span> nisi.</p>
+					<a href="#" class="button button--primary">Button</a>
+				</div>
+				<figure class="hero__img">
+					<img src="./images/image.png" alt="Main paint">
+				</figure>
 			</div>
-			<figure class="hero__img">
-				<img src="./images/image.png" alt="Main paint">
-			</figure>
 		</section>
 		<footer class="footer">
-			<p class="footer__copyright">Made for xxxx 2020</p>
+			<div class="container">
+				<p class="footer__copyright">Made for xxxx 2020</p>
+			</div>
 		</footer>
 	</main>
 </body>
