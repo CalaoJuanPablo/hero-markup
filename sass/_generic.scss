@@ -28,6 +28,7 @@ body {
 	font-family: $primary-font;
 	color: $color-typography-primary;
 	overflow-x: hidden;
+	font-size: 18px;
 }
 
 a {
@@ -42,4 +43,13 @@ a {
 .text--highlight {
 	color: $color-brand-primary;
 	font-weight: bold;
+}
+
+.button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	&--primary {
+		background-color: $color-brand-primary;
+		color: white;
+	}
 }
